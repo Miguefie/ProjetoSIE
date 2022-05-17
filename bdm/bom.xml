@@ -4,7 +4,7 @@
         <businessObject qualifiedName="com.company.model.Proposta">
             <description>Proposta para o Cliente</description>
             <fields>
-                <field type="TEXT" length="255" name="nome" nullable="true" collection="true"/>
+                <field type="TEXT" length="255" name="nome" nullable="false" collection="false"/>
                 <field type="BOOLEAN" length="255" name="tipo" nullable="false" collection="false"/>
             </fields>
             <uniqueConstraints/>
