@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0" productVersion="7.14.0">
+    <businessObjects>
+        <businessObject qualifiedName="com.company.model.Proposta">
+            <description>Proposta para o Cliente</description>
+            <fields>
+                <field type="TEXT" length="255" name="nome" nullable="true" collection="true"/>
+                <field type="BOOLEAN" length="255" name="tipo" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+    </businessObjects>
+</businessObjectModel>
