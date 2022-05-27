@@ -1,11 +1,54 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0" productVersion="7.14.0">
     <businessObjects>
+        <businessObject qualifiedName="com.company.model.Cliente">
+            <fields>
+                <field type="INTEGER" length="255" name="id" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nomeCliente" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="email" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Comercial">
+            <fields>
+                <field type="STRING" length="255" name="nome" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Fatura">
+            <fields>
+                <field type="STRING" length="255" name="attribute" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.NecessidadesSuporte">
+            <fields>
+                <field type="STRING" length="255" name="necessidades" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Projeto">
+            <fields>
+                <field type="STRING" length="255" name="attribute" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="com.company.model.Proposta">
             <description>Proposta para o Cliente</description>
             <fields>
                 <field type="TEXT" length="255" name="nome" nullable="false" collection="false"/>
                 <field type="BOOLEAN" length="255" name="tipo" nullable="false" collection="false"/>
+                <field type="INTEGER" length="255" name="idComercial" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
