@@ -623,7 +623,7 @@
                 <children xmi:type="notation:DecorationNode" xmi:id="_Wy018tdeEey5WNLrMn7tMg" type="5055">
                   <layoutConstraint xmi:type="notation:Location" xmi:id="_Wy0189deEey5WNLrMn7tMg" x="15" y="4"/>
                 </children>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Wy018ddeEey5WNLrMn7tMg"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Wy018ddeEey5WNLrMn7tMg" x="8" y="42"/>
               </children>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Vtm6UddeEey5WNLrMn7tMg" x="264" y="103" width="100" height="49"/>
             </children>

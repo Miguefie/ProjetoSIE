@@ -1,8 +1,8 @@
 {
   "modelVersion" : "2.2",
-  "id" : "newForm1",
-  "name" : "newForm1",
-  "lastUpdate" : 1652805632294,
+  "id" : "PropostaPreVenda",
+  "name" : "PropostaPreVenda",
+  "lastUpdate" : 1654010492990,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "e3253792-6b0b-4845-903f-1f886f4650e0",
+        "reference" : "9c003562-1de5-4569-ad7e-89364b2e504b",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -20,7 +20,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "668fbe7c-7ad7-440c-b40d-4a2cdd9fde30",
+          "reference" : "772c4c94-7198-459e-bb1c-b780cd2ca5d1",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -48,7 +48,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Proposta"
+                    "value" : "Proposta Pre Venda"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -59,7 +59,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "1bd54da5-4732-4add-9be7-e6060c96c4b5",
+                "reference" : "c38f733f-150d-49e9-beba-9e8b37e2076c",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -91,7 +91,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "a355cdff-064f-4725-b723-5c6a139080ea",
+                "reference" : "ece9724f-af7c-4dfb-8238-27fe37ce0cba",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -146,14 +146,14 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.propostaInput.nome"
+                          "value" : "formInput.propostaPreVendaInput.nome"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : true
                         }
                       },
-                      "reference" : "5470adc9-d36a-41d2-8bf7-40f0b209a70d",
+                      "reference" : "9dfd7cf2-e2ea-44cc-bbef-6c03daa40f46",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -187,7 +187,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Standard"
+                          "value" : "Tipo"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -195,14 +195,55 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.propostaInput.tipo"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
+                          "value" : "formInput.propostaPreVendaInput.tipo"
                         }
                       },
-                      "reference" : "4837c751-7029-47cd-ae98-82d753e66ec7",
+                      "reference" : "55e5e11b-8992-461d-8ca7-ab00bce303de",
+                      "hasValidationError" : false,
+                      "id" : "pbCheckbox",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Demonstracao"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formInput.propostaPreVendaInput.demonstracao"
+                        }
+                      },
+                      "reference" : "c30523dc-388f-4981-8d94-89eb2e5f04b0",
                       "hasValidationError" : false,
                       "id" : "pbCheckbox",
                       "description" : ""
@@ -282,7 +323,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "d3702dea-de7a-4524-854e-c42d5de81a32",
+                "reference" : "b1596fce-df3f-4a03-a21d-30c25badce24",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -334,7 +375,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "444a864c-b71c-4391-8363-2baea77eb9d0",
+                "reference" : "e099a951-daf1-40f2-a4c5-a5a046afa6dc",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -347,14 +388,14 @@
   ],
   "assets" : [
     {
-      "id" : "7751114b-b5da-42f6-bdce-0055a56c129e",
+      "id" : "0b65b5eb-ded7-45fb-9304-f6884240d10a",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "88c2243c-e412-4edc-9ca5-7cd6cda9f3f0",
+      "id" : "9ff37c15-5079-40e2-bd95-6b645694f5f5",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
@@ -367,9 +408,10 @@
       "type" : "json",
       "value" : [
         "{",
-        "  \"propostaInput\" : {",
+        "  \"propostaPreVendaInput\" : {",
         "    \"nome\" : \"\",",
-        "    \"tipo\" : false",
+        "    \"tipo\" : false,",
+        "    \"demonstracao\" : false",
         "  }",
         "}"
       ],
@@ -394,14 +436,14 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "\tpropostaInput: $data.formInput.propostaInput",
+        "\tpropostaPreVendaInput: $data.formInput.propostaPreVendaInput",
         "}"
       ],
       "exposed" : false
     }
   },
   "hasValidationError" : false,
-  "uuid" : "66e36275-68ef-497d-ad72-44eb6352b5eb",
+  "uuid" : "8b7abfd1-04dd-4c9a-9f56-474748e78ef0",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }
