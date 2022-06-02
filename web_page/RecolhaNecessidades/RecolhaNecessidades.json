@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "RecolhaNecessidades",
   "name" : "RecolhaNecessidades",
-  "lastUpdate" : 1654009307175,
+  "lastUpdate" : 1654160853676,
   "rows" : [
     [
       {
@@ -187,7 +187,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Tipo"
+                          "value" : "Tipo Standard"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -196,6 +196,10 @@
                         "value" : {
                           "type" : "variable",
                           "value" : "formInput.propostaInput.tipo"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
                       "reference" : "f9589428-2709-433c-8acc-e4c126aa4c94",
