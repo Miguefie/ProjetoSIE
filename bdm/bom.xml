@@ -47,9 +47,11 @@
             <description>Proposta para o Cliente</description>
             <fields>
                 <field type="TEXT" length="255" name="nome" nullable="false" collection="false"/>
-                <field type="BOOLEAN" length="255" name="tipo" nullable="false" collection="false"/>
+                <field type="BOOLEAN" length="255" name="standard" nullable="false" collection="false"/>
                 <field type="INTEGER" length="255" name="idComercial" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="demonstracao" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="detalhesSuficientes" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="tipo" nullable="false" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
