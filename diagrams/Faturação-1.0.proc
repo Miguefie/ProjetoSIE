@@ -255,6 +255,7 @@
         <dynamicLabel xmi:type="expression:Expression" xmi:id="_Dh4DsePVEeyt9O6Qe0AcVQ" name="" content="" returnTypeFixed="true"/>
         <dynamicDescription xmi:type="expression:Expression" xmi:id="_Dh4DsOPVEeyt9O6Qe0AcVQ" name="" content="" returnTypeFixed="true"/>
         <stepSummary xmi:type="expression:Expression" xmi:id="_Dh4DsuPVEeyt9O6Qe0AcVQ" name="" content="" returnTypeFixed="true"/>
+        <correlation xmi:type="expression:TableExpression" xmi:id="_EqdTAOZfEeyTw-9a64oVzQ"/>
       </elements>
       <elements xmi:type="process:EndEvent" xmi:id="_LjAokOPVEeyt9O6Qe0AcVQ" name="Faturação Completa" incoming="_LjFhEOPVEeyt9O6Qe0AcVQ">
         <dynamicLabel xmi:type="expression:Expression" xmi:id="_LjBPoePVEeyt9O6Qe0AcVQ" name="" content="" returnTypeFixed="true"/>
