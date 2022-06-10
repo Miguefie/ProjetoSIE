@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "recolhaNecessidades",
   "name" : "recolhaNecessidades",
-  "lastUpdate" : 1654296007512,
+  "lastUpdate" : 1654334795567,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "2c1f6a86-0ad6-4b01-b33b-edc4b273069f",
+        "reference" : "4f516e31-e72e-4688-b2ee-36899e6c1217",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -20,7 +20,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "8e4cab01-3053-420a-a408-19f336f852a4",
+          "reference" : "f5877b18-ca3b-4093-80a5-54c43c92b66b",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -59,7 +59,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "79ddb4c0-8ab2-4e00-8596-c9b06b545e30",
+                "reference" : "3e2c9611-ecee-4eb5-8a60-d9d5b57000dc",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -91,7 +91,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "b65c77b6-bd46-41ea-8457-6dbc4dbe9bc4",
+                "reference" : "13f1ba39-9db6-4bfd-901d-7a693dcb2703",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -153,7 +153,7 @@
                           "value" : true
                         }
                       },
-                      "reference" : "0af8f93b-e09e-4049-bc52-e86acf24f74e",
+                      "reference" : "82030a10-5ca1-493f-8eda-fa2969c1eae4",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -198,7 +198,7 @@
                           "value" : "formInput.propostaInput.standard"
                         }
                       },
-                      "reference" : "60b3f232-888b-47c1-bdb4-984f5b0c1c7a",
+                      "reference" : "888b3ff7-a9d8-4bbf-ad05-e1de3382ff5d",
                       "hasValidationError" : false,
                       "id" : "pbCheckbox",
                       "description" : ""
@@ -278,7 +278,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "d8da62c1-c692-4f91-baae-97b8763f10cc",
+                "reference" : "1a7471a9-d938-4fde-8528-23893b088ff2",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -330,7 +330,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "735c5aec-dfa9-4c0c-8275-dcc8d4873213",
+                "reference" : "b7a48aca-f83c-4c69-9268-89cc727681f4",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -343,16 +343,16 @@
   ],
   "assets" : [
     {
-      "id" : "12a66bf8-89e8-4d5e-a0e3-4f3e7dc489b8",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "7e8914c6-d8fa-4f9f-b730-f83526bebd91",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "635e8178-d1a0-41cb-a26d-51a0a1cdd75f",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "048f88d8-4892-49a6-8eea-3cefa32b85ee",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     }
@@ -397,7 +397,7 @@
     }
   },
   "hasValidationError" : false,
-  "uuid" : "e94be57e-2821-452e-8c0e-a8a15c4bd02a",
+  "uuid" : "f72ab3f9-02c7-494e-856d-2c3efff468a7",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }
