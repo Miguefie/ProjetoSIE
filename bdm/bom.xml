@@ -52,6 +52,7 @@
                 <field type="BOOLEAN" length="255" name="demonstracao" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="detalhesSuficientes" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="tipo" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="respostaCliente" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
