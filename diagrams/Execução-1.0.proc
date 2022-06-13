@@ -32,6 +32,75 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_4o9wYOoqEey3ssalrLN_hA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_4o8iQOoqEey3ssalrLN_hA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_4o-XcOoqEey3ssalrLN_hA" name="" content="" returnTypeFixed="true"/>
+          <connectors xmi:type="process:Connector" xmi:id="_nNI7kOtPEeyPHuO4QlFIzg" name="enviaProposta" definitionId="email" event="ON_ENTER" definitionVersion="1.2.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_nNI7ketPEeyPHuO4QlFIzg" definitionId="email" version="1.2.0" modelVersion="7.12.0-004">
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nNI7kutPEeyPHuO4QlFIzg" key="smtpHost">
+                <expression xmi:type="expression:Expression" xmi:id="_nNI7k-tPEeyPHuO4QlFIzg" name="localhost" content="localhost" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nNI7lOtPEeyPHuO4QlFIzg" key="smtpPort">
+                <expression xmi:type="expression:Expression" xmi:id="_nNI7letPEeyPHuO4QlFIzg" name="2525" content="2525" returnType="java.lang.Integer" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nNI7lutPEeyPHuO4QlFIzg" key="sslSupport">
+                <expression xmi:type="expression:Expression" xmi:id="_nNI7l-tPEeyPHuO4QlFIzg" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nNI7mOtPEeyPHuO4QlFIzg" key="starttlsSupport">
+                <expression xmi:type="expression:Expression" xmi:id="_nNI7metPEeyPHuO4QlFIzg" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nNI7mutPEeyPHuO4QlFIzg" key="trustCertificate">
+                <expression xmi:type="expression:Expression" xmi:id="_nNI7m-tPEeyPHuO4QlFIzg" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nNI7nOtPEeyPHuO4QlFIzg" key="userName">
+                <expression xmi:type="expression:Expression" xmi:id="_nNI7netPEeyPHuO4QlFIzg" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nNI7nutPEeyPHuO4QlFIzg" key="password">
+                <expression xmi:type="expression:Expression" xmi:id="_nNI7n-tPEeyPHuO4QlFIzg" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nNI7oOtPEeyPHuO4QlFIzg" key="from">
+                <expression xmi:type="expression:Expression" xmi:id="_nNI7oetPEeyPHuO4QlFIzg" name="no-reply@acme.com" content="no-reply@acme.com" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nNI7outPEeyPHuO4QlFIzg" key="returnPath">
+                <expression xmi:type="expression:Expression" xmi:id="_nNI7o-tPEeyPHuO4QlFIzg" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nNI7pOtPEeyPHuO4QlFIzg" key="to">
+                <expression xmi:type="expression:Expression" xmi:id="_nNI7petPEeyPHuO4QlFIzg" name="to()" content="userEmail" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:Data" xmi:id="_nNI7putPEeyPHuO4QlFIzg" name="userEmail" dataType="_i_dRgOoqEey3ssalrLN_hA"/>
+                </expression>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nNI7p-tPEeyPHuO4QlFIzg" key="bcc">
+                <expression xmi:type="expression:Expression" xmi:id="_nNI7qOtPEeyPHuO4QlFIzg" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nNI7qetPEeyPHuO4QlFIzg" key="cc">
+                <expression xmi:type="expression:Expression" xmi:id="_nNI7qutPEeyPHuO4QlFIzg" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nNI7q-tPEeyPHuO4QlFIzg" key="subject">
+                <expression xmi:type="expression:Expression" xmi:id="_nNI7rOtPEeyPHuO4QlFIzg" name="Proposta" content="Proposta" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nNI7retPEeyPHuO4QlFIzg" key="html">
+                <expression xmi:type="expression:Expression" xmi:id="_nNI7rutPEeyPHuO4QlFIzg" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nNI7r-tPEeyPHuO4QlFIzg" key="message">
+                <expression xmi:type="expression:Expression" xmi:id="_nNI7sOtPEeyPHuO4QlFIzg" name="&lt;pattern-expression>" content="&lt;p>Bom dia. Aqui tem a sua proposta. ${proposta}&lt;/p>&#xA;" type="TYPE_PATTERN" returnTypeFixed="true">
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_wjCT8OtPEeyPHuO4QlFIzg" name="proposta" content="proposta" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_wjCT8etPEeyPHuO4QlFIzg" name="proposta" content="proposta" type="TYPE_VARIABLE" returnType="com.company.model.Proposta">
+                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_wjCT8utPEeyPHuO4QlFIzg" name="proposta" dataType="_i_dRg-oqEey3ssalrLN_hA" className="com.company.model.Proposta"/>
+                    </referencedElements>
+                  </referencedElements>
+                </expression>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nNI7tOtPEeyPHuO4QlFIzg" key="headers">
+                <expression xmi:type="expression:TableExpression" xmi:id="_nNI7tetPEeyPHuO4QlFIzg"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nNI7tutPEeyPHuO4QlFIzg" key="charset">
+                <expression xmi:type="expression:Expression" xmi:id="_nNI7t-tPEeyPHuO4QlFIzg" name="UTF-8" content="UTF-8" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nNI7uOtPEeyPHuO4QlFIzg" key="replyTo">
+                <expression xmi:type="expression:Expression" xmi:id="_nNI7uetPEeyPHuO4QlFIzg" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_nNI7uutPEeyPHuO4QlFIzg" key="attachments">
+                <expression xmi:type="expression:ListExpression" xmi:id="_nNI7u-tPEeyPHuO4QlFIzg"/>
+              </parameters>
+            </configuration>
+          </connectors>
           <loopCondition xmi:type="expression:Expression" xmi:id="_4o-XceoqEey3ssalrLN_hA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_4o-XcuoqEey3ssalrLN_hA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_4o-Xc-oqEey3ssalrLN_hA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -160,9 +229,8 @@
                 <expression xmi:type="expression:Expression" xmi:id="_N19j4-tCEeyBBbS0Jq0WVg" content="" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_N19j5OtCEeyBBbS0Jq0WVg" key="to">
-                <expression xmi:type="expression:Expression" xmi:id="_N19j5etCEeyBBbS0Jq0WVg" name="to()" content="import org.bonitasoft.engine.identity.UserNotFoundException&#xA;try{&#xA;&#x9;def processInitiator = apiAccessor.getIdentityAPI().getUser(apiAccessor.getProcessAPI()&#xA;&#x9;&#x9;&#x9;.getProcessInstance(processInstanceId)&#xA;&#x9;&#x9;&#x9;.getStartedBy())&#xA;&#x9;&#x9;&#x9;&#xA;}catch(UserNotFoundException e){&#xA;&#x9;// Handle UserNotFoundException here&#xA;&#x9;// Was the process started by the system (e.g.: a start event) ?&#xA;&#x9;// Has the user who started the process instance been deleted ?&#xA;}&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                  <referencedElements xmi:type="expression:Expression" xmi:id="_N19j5utCEeyBBbS0Jq0WVg" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
-                  <referencedElements xmi:type="expression:Expression" xmi:id="_N19j5-tCEeyBBbS0Jq0WVg" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+                <expression xmi:type="expression:Expression" xmi:id="_N19j5etCEeyBBbS0Jq0WVg" name="to()" content="userEmail" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:Data" xmi:id="_8Q30EOtPEeyPHuO4QlFIzg" name="userEmail" dataType="_i_dRgOoqEey3ssalrLN_hA"/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_N19j6OtCEeyBBbS0Jq0WVg" key="bcc">
@@ -253,9 +321,8 @@
                 <expression xmi:type="expression:Expression" xmi:id="__0f0QutBEeyBBbS0Jq0WVg" content="" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="__0f0Q-tBEeyBBbS0Jq0WVg" key="to">
-                <expression xmi:type="expression:Expression" xmi:id="__0f0ROtBEeyBBbS0Jq0WVg" name="to()" content="import org.bonitasoft.engine.identity.UserNotFoundException&#xA;&#xA;try{&#xA;&#x9;def processInitiator = apiAccessor.getIdentityAPI().getUser(apiAccessor.getProcessAPI()&#xA;&#x9;&#x9;&#x9;.getProcessInstance(processInstanceId)&#xA;&#x9;&#x9;&#x9;.getStartedBy())&#xA;&#x9;&#x9;&#x9;&#xA;}catch(UserNotFoundException e){&#xA;&#x9;// Handle UserNotFoundException here&#xA;&#x9;// Was the process started by the system (e.g.: a start event) ?&#xA;&#x9;// Has the user who started the process instance been deleted ?&#xA;}" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                  <referencedElements xmi:type="expression:Expression" xmi:id="__0f0RetBEeyBBbS0Jq0WVg" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
-                  <referencedElements xmi:type="expression:Expression" xmi:id="__0f0RutBEeyBBbS0Jq0WVg" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+                <expression xmi:type="expression:Expression" xmi:id="__0f0ROtBEeyBBbS0Jq0WVg" name="to()" content="userEmail" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:Data" xmi:id="_ADTj4OtQEeyPHuO4QlFIzg" name="userEmail" dataType="_i_dRgOoqEey3ssalrLN_hA"/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="__0f0R-tBEeyBBbS0Jq0WVg" key="bcc">
@@ -271,7 +338,7 @@
                 <expression xmi:type="expression:Expression" xmi:id="__0f0TutBEeyBBbS0Jq0WVg" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="__0f0T-tBEeyBBbS0Jq0WVg" key="message">
-                <expression xmi:type="expression:Expression" xmi:id="__0f0UOtBEeyBBbS0Jq0WVg" name="&lt;pattern-expression>" content="Bom dia, tem uma proposta pendente." type="TYPE_PATTERN" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="__0f0UOtBEeyBBbS0Jq0WVg" name="&lt;pattern-expression>" content="&lt;p>Bom dia, tem uma proposta pendente.&lt;/p>&#xA;" type="TYPE_PATTERN" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="__0f0UetBEeyBBbS0Jq0WVg" key="headers">
                 <expression xmi:type="expression:TableExpression" xmi:id="__0f0UutBEeyBBbS0Jq0WVg"/>
@@ -445,6 +512,75 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_kYjq4eotEey3ssalrLN_hA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_kYjq4OotEey3ssalrLN_hA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_kYjq4uotEey3ssalrLN_hA" name="" content="" returnTypeFixed="true"/>
+          <connectors xmi:type="process:Connector" xmi:id="_WDmLQOtQEeyPHuO4QlFIzg" name="enviarFuncionalidade" definitionId="email" event="ON_ENTER" definitionVersion="1.2.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_WDmLQetQEeyPHuO4QlFIzg" definitionId="email" version="1.2.0" modelVersion="7.12.0-004">
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_WDmLQutQEeyPHuO4QlFIzg" key="smtpHost">
+                <expression xmi:type="expression:Expression" xmi:id="_WDmLQ-tQEeyPHuO4QlFIzg" name="localhost" content="localhost" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_WDmLROtQEeyPHuO4QlFIzg" key="smtpPort">
+                <expression xmi:type="expression:Expression" xmi:id="_WDmLRetQEeyPHuO4QlFIzg" name="2525" content="2525" returnType="java.lang.Integer" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_WDmLRutQEeyPHuO4QlFIzg" key="sslSupport">
+                <expression xmi:type="expression:Expression" xmi:id="_WDmLR-tQEeyPHuO4QlFIzg" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_WDmLSOtQEeyPHuO4QlFIzg" key="starttlsSupport">
+                <expression xmi:type="expression:Expression" xmi:id="_WDmLSetQEeyPHuO4QlFIzg" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_WDmLSutQEeyPHuO4QlFIzg" key="trustCertificate">
+                <expression xmi:type="expression:Expression" xmi:id="_WDmLS-tQEeyPHuO4QlFIzg" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_WDmLTOtQEeyPHuO4QlFIzg" key="userName">
+                <expression xmi:type="expression:Expression" xmi:id="_WDmLTetQEeyPHuO4QlFIzg" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_WDmLTutQEeyPHuO4QlFIzg" key="password">
+                <expression xmi:type="expression:Expression" xmi:id="_WDmLT-tQEeyPHuO4QlFIzg" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_WDmLUOtQEeyPHuO4QlFIzg" key="from">
+                <expression xmi:type="expression:Expression" xmi:id="_WDmLUetQEeyPHuO4QlFIzg" name="no-reply@acme.com" content="no-reply@acme.com" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_WDmLUutQEeyPHuO4QlFIzg" key="returnPath">
+                <expression xmi:type="expression:Expression" xmi:id="_WDmLU-tQEeyPHuO4QlFIzg" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_WDmLVOtQEeyPHuO4QlFIzg" key="to">
+                <expression xmi:type="expression:Expression" xmi:id="_WDmLVetQEeyPHuO4QlFIzg" name="to()" content="userEmail" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:Data" xmi:id="_WDmLVutQEeyPHuO4QlFIzg" name="userEmail" dataType="_i_dRgOoqEey3ssalrLN_hA"/>
+                </expression>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_WDmLV-tQEeyPHuO4QlFIzg" key="bcc">
+                <expression xmi:type="expression:Expression" xmi:id="_WDmLWOtQEeyPHuO4QlFIzg" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_WDmLWetQEeyPHuO4QlFIzg" key="cc">
+                <expression xmi:type="expression:Expression" xmi:id="_WDmLWutQEeyPHuO4QlFIzg" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_WDmLW-tQEeyPHuO4QlFIzg" key="subject">
+                <expression xmi:type="expression:Expression" xmi:id="_WDmLXOtQEeyPHuO4QlFIzg" name="Tem uma nova funcionalidade disponivel" content="Tem uma nova funcionalidade disponivel" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_WDmLXetQEeyPHuO4QlFIzg" key="html">
+                <expression xmi:type="expression:Expression" xmi:id="_WDmLXutQEeyPHuO4QlFIzg" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_WDmLX-tQEeyPHuO4QlFIzg" key="message">
+                <expression xmi:type="expression:Expression" xmi:id="_WDmLYOtQEeyPHuO4QlFIzg" name="&lt;pattern-expression>" content="Tem uma nova funcionalidade disponivel &#xA;&#xA;${funcionalidadeTerminada}" type="TYPE_PATTERN" returnTypeFixed="true">
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_WDmLYetQEeyPHuO4QlFIzg" name="funcionalidadeTerminada" content="funcionalidadeTerminada" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                    <referencedElements xmi:type="expression:Expression" xmi:id="_WDmLYutQEeyPHuO4QlFIzg" name="funcionalidadeTerminada" content="funcionalidadeTerminada" type="TYPE_VARIABLE">
+                      <referencedElements xmi:type="process:Data" xmi:id="_WDmLY-tQEeyPHuO4QlFIzg" name="funcionalidadeTerminada" dataType="_i_dRgOoqEey3ssalrLN_hA"/>
+                    </referencedElements>
+                  </referencedElements>
+                </expression>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_WDmLZOtQEeyPHuO4QlFIzg" key="headers">
+                <expression xmi:type="expression:TableExpression" xmi:id="_WDmLZetQEeyPHuO4QlFIzg"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_WDmLZutQEeyPHuO4QlFIzg" key="charset">
+                <expression xmi:type="expression:Expression" xmi:id="_WDmyUOtQEeyPHuO4QlFIzg" name="UTF-8" content="UTF-8" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_WDmyUetQEeyPHuO4QlFIzg" key="replyTo">
+                <expression xmi:type="expression:Expression" xmi:id="_WDmyUutQEeyPHuO4QlFIzg" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_WDmyU-tQEeyPHuO4QlFIzg" key="attachments">
+                <expression xmi:type="expression:ListExpression" xmi:id="_WDmyVOtQEeyPHuO4QlFIzg"/>
+              </parameters>
+            </configuration>
+          </connectors>
           <loopCondition xmi:type="expression:Expression" xmi:id="_kYjq4-otEey3ssalrLN_hA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_kYjq5OotEey3ssalrLN_hA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_kYjq5eotEey3ssalrLN_hA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -495,9 +631,8 @@
                 <expression xmi:type="expression:Expression" xmi:id="_dPhHy-tCEeyBBbS0Jq0WVg" content="" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_dPhHzOtCEeyBBbS0Jq0WVg" key="to">
-                <expression xmi:type="expression:Expression" xmi:id="_dPhHzetCEeyBBbS0Jq0WVg" name="to()" content="import org.bonitasoft.engine.identity.UserNotFoundException&#xA;try{&#xA;&#x9;def processInitiator = apiAccessor.getIdentityAPI().getUser(apiAccessor.getProcessAPI()&#xA;&#x9;&#x9;&#x9;.getProcessInstance(processInstanceId)&#xA;&#x9;&#x9;&#x9;.getStartedBy())&#xA;&#x9;&#x9;&#x9;&#xA;}catch(UserNotFoundException e){&#xA;&#x9;// Handle UserNotFoundException here&#xA;&#x9;// Was the process started by the system (e.g.: a start event) ?&#xA;&#x9;// Has the user who started the process instance been deleted ?&#xA;}&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                  <referencedElements xmi:type="expression:Expression" xmi:id="_dPhHzutCEeyBBbS0Jq0WVg" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
-                  <referencedElements xmi:type="expression:Expression" xmi:id="_dPhHz-tCEeyBBbS0Jq0WVg" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+                <expression xmi:type="expression:Expression" xmi:id="_dPhHzetCEeyBBbS0Jq0WVg" name="to()" content="userEmail" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:Data" xmi:id="_aYPQQOtQEeyPHuO4QlFIzg" name="userEmail" dataType="_i_dRgOoqEey3ssalrLN_hA"/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_dPhH0OtCEeyBBbS0Jq0WVg" key="bcc">
@@ -513,7 +648,7 @@
                 <expression xmi:type="expression:Expression" xmi:id="_dPhH1-tCEeyBBbS0Jq0WVg" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_dPhH2OtCEeyBBbS0Jq0WVg" key="message">
-                <expression xmi:type="expression:Expression" xmi:id="_dPhH2etCEeyBBbS0Jq0WVg" name="&lt;pattern-expression>" content="Bom dia, tem uma fatura pendente." type="TYPE_PATTERN" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_dPhH2etCEeyBBbS0Jq0WVg" name="&lt;pattern-expression>" content="&lt;p>Bom dia, tem uma fatura pendente.&lt;/p>&#xA;" type="TYPE_PATTERN" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_dPhH2utCEeyBBbS0Jq0WVg" key="headers">
                 <expression xmi:type="expression:TableExpression" xmi:id="_dPhH2-tCEeyBBbS0Jq0WVg"/>
@@ -668,6 +803,12 @@
       </data>
       <data xmi:type="process:BusinessObjectData" xmi:id="_l12IkOs7EeygBssbWnCnCg" name="projeto" dataType="_i_dRg-oqEey3ssalrLN_hA" className="com.company.model.Projeto">
         <defaultValue xmi:type="expression:Expression" xmi:id="_l13WsOs7EeygBssbWnCnCg" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
+      </data>
+      <data xmi:type="process:Data" xmi:id="_Br5u0OtPEeyPHuO4QlFIzg" name="userEmail" dataType="_i_dRgOoqEey3ssalrLN_hA">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_Br5u0etPEeyPHuO4QlFIzg" name="init_userEmail()" content="import org.bonitasoft.engine.identity.UserNotFoundException&#xA;try{&#xA;&#x9;def processInitiator = apiAccessor.getIdentityAPI().getUser(apiAccessor.getProcessAPI()&#xA;&#x9;&#x9;&#x9;.getProcessInstance(processInstanceId)&#xA;&#x9;&#x9;&#x9;.getStartedBy())&#xA;&#x9;&#x9;&#x9;&#xA;&#x9;return apiAccessor.getIdentityAPI().getUserContactData(processInitiator.id, false)&#xA;&#x9;.email&#xA;&#xA;&#xA;}catch(UserNotFoundException e){&#xA;&#x9;// Handle UserNotFoundException here&#xA;&#x9;// Was the process started by the system (e.g.: a start event) ?&#xA;&#x9;// Has the user who started the process instance been deleted ?&#xA;}&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+          <referencedElements xmi:type="expression:Expression" xmi:id="_Ez4MYOtPEeyPHuO4QlFIzg" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
+          <referencedElements xmi:type="expression:Expression" xmi:id="_Ez4MYetPEeyPHuO4QlFIzg" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+        </defaultValue>
       </data>
       <connectors xmi:type="process:Connector" xmi:id="_BH6h8OqUEeycC73DKQ2fEA" name="getAllPropostas" definitionId="database-mysql" event="ON_ENTER" definitionVersion="1.0.0">
         <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_BH8XIOqUEeycC73DKQ2fEA" definitionId="database-mysql" version="1.0.0" modelVersion="7.12.0-004">
@@ -1057,9 +1198,8 @@
                 <expression xmi:type="expression:Expression" xmi:id="_qUTzy-tCEeyBBbS0Jq0WVg" content="" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_qUTzzOtCEeyBBbS0Jq0WVg" key="to">
-                <expression xmi:type="expression:Expression" xmi:id="_qUTzzetCEeyBBbS0Jq0WVg" name="to()" content="import org.bonitasoft.engine.identity.UserNotFoundException&#xA;try{&#xA;&#x9;def processInitiator = apiAccessor.getIdentityAPI().getUser(apiAccessor.getProcessAPI()&#xA;&#x9;&#x9;&#x9;.getProcessInstance(processInstanceId)&#xA;&#x9;&#x9;&#x9;.getStartedBy())&#xA;&#x9;&#x9;&#x9;&#xA;}catch(UserNotFoundException e){&#xA;&#x9;// Handle UserNotFoundException here&#xA;&#x9;// Was the process started by the system (e.g.: a start event) ?&#xA;&#x9;// Has the user who started the process instance been deleted ?&#xA;}&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                  <referencedElements xmi:type="expression:Expression" xmi:id="_qUTzzutCEeyBBbS0Jq0WVg" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
-                  <referencedElements xmi:type="expression:Expression" xmi:id="_qUTzz-tCEeyBBbS0Jq0WVg" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+                <expression xmi:type="expression:Expression" xmi:id="_qUTzzetCEeyBBbS0Jq0WVg" name="to()" content="userEmail" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:Data" xmi:id="_0TYjoOtQEeyPHuO4QlFIzg" name="userEmail" dataType="_i_dRgOoqEey3ssalrLN_hA"/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_qUTz0OtCEeyBBbS0Jq0WVg" key="bcc">
@@ -1133,6 +1273,12 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_azhSkuqWEeyPUsJDeAk7IQ" name="" content="" returnTypeFixed="true"/>
         </elements>
       </elements>
+      <data xmi:type="process:Data" xmi:id="_xSN4sOtQEeyPHuO4QlFIzg" name="userEmail" dataType="_i_dRgOoqEey3ssalrLN_hA">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_xSN4setQEeyPHuO4QlFIzg" name="init_userEmail()" content="import org.bonitasoft.engine.identity.UserNotFoundException&#xA;try{&#xA;&#x9;def processInitiator = apiAccessor.getIdentityAPI().getUser(apiAccessor.getProcessAPI()&#xA;&#x9;&#x9;&#x9;.getProcessInstance(processInstanceId)&#xA;&#x9;&#x9;&#x9;.getStartedBy())&#xA;&#x9;&#x9;&#x9;&#xA;&#x9;return apiAccessor.getIdentityAPI().getUserContactData(processInitiator.id, false)&#xA;&#x9;.email&#xA;&#xA;&#xA;}catch(UserNotFoundException e){&#xA;&#x9;// Handle UserNotFoundException here&#xA;&#x9;// Was the process started by the system (e.g.: a start event) ?&#xA;&#x9;// Has the user who started the process instance been deleted ?&#xA;}" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+          <referencedElements xmi:type="expression:Expression" xmi:id="_xSN4sutQEeyPHuO4QlFIzg" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
+          <referencedElements xmi:type="expression:Expression" xmi:id="_xSN4s-tQEeyPHuO4QlFIzg" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+        </defaultValue>
+      </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_KwD2AOqWEeyPUsJDeAk7IQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_dWbxoutOEey_SKhEaq3Xqg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
@@ -1365,9 +1511,8 @@
                 <expression xmi:type="expression:Expression" xmi:id="_zkm6g-tCEeyBBbS0Jq0WVg" content="" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_zkm6hOtCEeyBBbS0Jq0WVg" key="to">
-                <expression xmi:type="expression:Expression" xmi:id="_zkm6hetCEeyBBbS0Jq0WVg" name="to()" content="import org.bonitasoft.engine.identity.UserNotFoundException&#xA;try{&#xA;&#x9;def processInitiator = apiAccessor.getIdentityAPI().getUser(apiAccessor.getProcessAPI()&#xA;&#x9;&#x9;&#x9;.getProcessInstance(processInstanceId)&#xA;&#x9;&#x9;&#x9;.getStartedBy())&#xA;&#x9;&#x9;&#x9;&#xA;}catch(UserNotFoundException e){&#xA;&#x9;// Handle UserNotFoundException here&#xA;&#x9;// Was the process started by the system (e.g.: a start event) ?&#xA;&#x9;// Has the user who started the process instance been deleted ?&#xA;}&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                  <referencedElements xmi:type="expression:Expression" xmi:id="_zkm6hutCEeyBBbS0Jq0WVg" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
-                  <referencedElements xmi:type="expression:Expression" xmi:id="_zkm6h-tCEeyBBbS0Jq0WVg" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+                <expression xmi:type="expression:Expression" xmi:id="_zkm6hetCEeyBBbS0Jq0WVg" name="to()" content="userEmail" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:Data" xmi:id="_76ISkOtQEeyPHuO4QlFIzg" name="userEmail" dataType="_i_dRgOoqEey3ssalrLN_hA"/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_zkm6iOtCEeyBBbS0Jq0WVg" key="bcc">
@@ -1441,6 +1586,12 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_uVbL8OqWEeyPUsJDeAk7IQ" name="" content="" returnTypeFixed="true"/>
         </elements>
       </elements>
+      <data xmi:type="process:Data" xmi:id="_4LrD0OtQEeyPHuO4QlFIzg" name="userEmail" dataType="_i_dRgOoqEey3ssalrLN_hA">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_4LrD0etQEeyPHuO4QlFIzg" name="init_userEmail()" content="import org.bonitasoft.engine.identity.UserNotFoundException&#xA;try{&#xA;&#x9;def processInitiator = apiAccessor.getIdentityAPI().getUser(apiAccessor.getProcessAPI()&#xA;&#x9;&#x9;&#x9;.getProcessInstance(processInstanceId)&#xA;&#x9;&#x9;&#x9;.getStartedBy())&#xA;&#x9;&#x9;&#x9;&#xA;&#x9;return apiAccessor.getIdentityAPI().getUserContactData(processInitiator.id, false)&#xA;&#x9;.email&#xA;&#xA;&#xA;}catch(UserNotFoundException e){&#xA;&#x9;// Handle UserNotFoundException here&#xA;&#x9;// Was the process started by the system (e.g.: a start event) ?&#xA;&#x9;// Has the user who started the process instance been deleted ?&#xA;}" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+          <referencedElements xmi:type="expression:Expression" xmi:id="_4LrD0utQEeyPHuO4QlFIzg" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
+          <referencedElements xmi:type="expression:Expression" xmi:id="_4LrD0-tQEeyPHuO4QlFIzg" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+        </defaultValue>
+      </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_jDEt8OqWEeyPUsJDeAk7IQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_dF0iwutOEey_SKhEaq3Xqg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
