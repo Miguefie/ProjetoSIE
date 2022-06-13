@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:process="http://www.bonitasoft.org/ns/studio/process" definitionId="database-mysql" version="1.0.0" name="database-mysql (1.0.0)" modelVersion="7.12.0-004">
+  <parameters key="driver">
+    <expression xsi:type="expression:Expression" name="com.mysql.jdbc.Driver" content="com.mysql.jdbc.Driver" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="url">
+    <expression xsi:type="expression:Expression" name="jdbc:mysql://localhost:3306/projeto_sie" content="jdbc:mysql://localhost:3306/projeto_sie" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="script">
+    <expression xsi:type="expression:Expression" name="&lt;pattern-expression>" content="INSERT INTO Proposta VALUES (${proposta.nome}, ${proposta.tipo})" type="TYPE_PATTERN" returnTypeFixed="true">
+      <referencedElements xsi:type="expression:Expression" name="proposta.nome" content="proposta.nome" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+        <referencedElements xsi:type="expression:Expression" name="proposta" content="proposta" type="TYPE_VARIABLE" returnType="com.company.model.Proposta">
+          <referencedElements xsi:type="process:BusinessObjectData" name="proposta" className="com.company.model.Proposta">
+            <dataType xsi:type="process:BusinessObjectType" href="platform:/resource/ProjetoSIE/diagrams/Venda-1.0.proc#_gpdRgdBiEeySNv6aWQCo8g"/>
+          </referencedElements>
+        </referencedElements>
+      </referencedElements>
+      <referencedElements xsi:type="expression:Expression" name="proposta.tipo" content="proposta.tipo" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+        <referencedElements xsi:type="expression:Expression" name="proposta" content="proposta" type="TYPE_VARIABLE" returnType="com.company.model.Proposta">
+          <referencedElements xsi:type="process:BusinessObjectData" name="proposta" className="com.company.model.Proposta">
+            <dataType xsi:type="process:BusinessObjectType" href="platform:/resource/ProjetoSIE/diagrams/Venda-1.0.proc#_gpdRgdBiEeySNv6aWQCo8g"/>
+          </referencedElements>
+        </referencedElements>
+      </referencedElements>
+    </expression>
+  </parameters>
+  <parameters key="username">
+    <expression xsi:type="expression:Expression" name="root" content="root" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="password">
+    <expression xsi:type="expression:Expression" name="root" content="root" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="separator">
+    <expression xsi:type="expression:Expression" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="outputType">
+    <expression xsi:type="expression:Expression" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="wizardMode">
+    <expression xsi:type="expression:Expression" name="true" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+  </parameters>
+</connectorconfiguration:ConnectorConfiguration>
